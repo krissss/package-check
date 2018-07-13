@@ -1,0 +1,57 @@
+{
+  "name": "kriss/yii2-advanced",
+  "description": "Yii2 advanced project template, Frontend for API and Backend with AdminLTE",
+  "keywords": ["yii2", "advanced", "project template"],
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kriss",
+      "email": "462679766@qq.com"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/krissss/yii2advanced"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0",
+    "dmstr/yii2-adminlte-asset": "^2.6",
+    "kartik-v/yii2-datecontrol": "^1.9",
+    "kartik-v/yii2-dynagrid": "^1.4.7",
+    "kriss/yii2-adminlte-iframe-mode": "^1.4",
+    "kriss/yii2-common-class": "^2.0",
+    "kriss/yii2-filesystem-qiniu": "^1.0",
+    "kriss/yii2-log-reader": "^2.2",
+    "vlucas/phpdotenv": "^2.4",
+    "yiisoft/yii2": "2.0.15.1",
+    "yiisoft/yii2-bootstrap": "^2.0",
+    "yiisoft/yii2-httpclient": "^2.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "^2.0",
+    "yiisoft/yii2-gii": "^2.0"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "npm-asset-repository": "https://registry.npm.taobao.org"
+  },
+  "scripts": {
+    "post-create-project-cmd": "php -r \"file_exists('.env-project') || copy('.env-project-example', '.env-project');\""
+  },
+  "repositories": {
+    "composer": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
