@@ -31,7 +31,7 @@ class CronPackagistController extends CronBaseController
     public function service()
     {
         $currentHour = (int)date('h');
-        if ($currentHour != 9) {
+        if ($currentHour == 9) {
             // 每天 9 点更新一次数据
             $job = new PackagistUpdateJob();
             $job->execute();
