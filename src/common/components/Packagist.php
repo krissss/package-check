@@ -43,6 +43,10 @@ class Packagist extends BaseObject
             ->send();
         if ($response->isOk) {
             return json_decode($response->content, true);
+        } else {
+            if ($response->statusCode == 404) {
+                return [];
+            }
         }
         throw new ApiResponseErrorException($response->statusCode);
     }
@@ -56,6 +60,7 @@ class Packagist extends BaseObject
      */
     public function getPackageByName($vendor, $package)
     {
-        return $this->api("packages/{$vendor}/{$package}.json");
+        $result = $this->api("packages/{$vendor}/{$package}.json");
+        return $result ? $result['package'] : [];
     }
 }

@@ -4,7 +4,7 @@ return [
     'id' => 'app-console',
     'basePath' => '@console',
     'runtimePath' => '@runtimePath/console',
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log', 'queue'],
     'controllerNamespace' => 'console\controllers',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',

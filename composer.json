@@ -22,12 +22,12 @@
     "kartik-v/yii2-dynagrid": "^1.4.7",
     "kriss/yii2-adminlte-iframe-mode": "^1.4",
     "kriss/yii2-common-class": "^2.0",
-    "kriss/yii2-filesystem-qiniu": "^1.0",
     "kriss/yii2-log-reader": "^2.2",
     "vlucas/phpdotenv": "^2.4",
     "yiisoft/yii2": "2.0.15.1",
     "yiisoft/yii2-bootstrap": "^2.0",
-    "yiisoft/yii2-httpclient": "^2.0"
+    "yiisoft/yii2-httpclient": "^2.0",
+    "yiisoft/yii2-queue": "^2.1"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0",

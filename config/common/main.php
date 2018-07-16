@@ -32,5 +32,8 @@ return [
             'rules' => [
             ],
         ],
+        'queue' => [
+            'class' => \yii\queue\file\Queue::class,
+        ]
     ], $extendComponents),
 ];
