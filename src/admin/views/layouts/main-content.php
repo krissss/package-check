@@ -2,7 +2,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-\kriss\iframeLayout\IframeAsset::register($this);
+\kriss\iframeLayout\widget\IframeModeAssetWidget::widget();
 admin\assets\AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>

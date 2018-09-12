@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0d0f014bb7501a318a36be29a0f0078",
+    "content-hash": "b412f2530c2400777cbfb0a93157f3f5",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1022,16 +1022,16 @@
         },
         {
             "name": "kriss/yii2-adminlte-iframe-mode",
-            "version": "v1.4",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krissss/yii2-adminlte-iframe-mode.git",
-                "reference": "09518de1de07ae954738137d6f215c410a47247e"
+                "reference": "a81657293dd6282bccb7d91cdc61958533933dcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krissss/yii2-adminlte-iframe-mode/zipball/09518de1de07ae954738137d6f215c410a47247e",
-                "reference": "09518de1de07ae954738137d6f215c410a47247e",
+                "url": "https://api.github.com/repos/krissss/yii2-adminlte-iframe-mode/zipball/a81657293dd6282bccb7d91cdc61958533933dcf",
+                "reference": "a81657293dd6282bccb7d91cdc61958533933dcf",
                 "shasum": ""
             },
             "require": {
@@ -1042,7 +1042,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "kriss\\iframeLayout\\": ""
+                    "kriss\\iframeLayout\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1061,20 +1061,20 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2018-06-28T02:59:43+00:00"
+            "time": "2018-09-10T02:30:11+00:00"
         },
         {
             "name": "kriss/yii2-common-class",
-            "version": "v2.0.4",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krissss/yii2-common-tools.git",
-                "reference": "14e9ad7e62417993a23cb00f72b7de88e9eb8972"
+                "reference": "00871f3fc23b69585656a9cbc3cf69a3720c77ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krissss/yii2-common-tools/zipball/14e9ad7e62417993a23cb00f72b7de88e9eb8972",
-                "reference": "14e9ad7e62417993a23cb00f72b7de88e9eb8972",
+                "url": "https://api.github.com/repos/krissss/yii2-common-tools/zipball/00871f3fc23b69585656a9cbc3cf69a3720c77ec",
+                "reference": "00871f3fc23b69585656a9cbc3cf69a3720c77ec",
                 "shasum": ""
             },
             "require": {
@@ -1086,7 +1086,8 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "kriss\\": "/"
+                    "kriss\\": "",
+                    "kriss\\auth\\": "modules/auth"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1104,7 +1105,7 @@
             "keywords": [
                 "yii2"
             ],
-            "time": "2018-07-12T08:24:21+00:00"
+            "time": "2018-09-07T06:41:16+00:00"
         },
         {
             "name": "kriss/yii2-log-reader",

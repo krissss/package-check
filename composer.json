@@ -1,7 +1,8 @@
 {
-  "name": "kriss/yii2-advanced",
-  "description": "Yii2 advanced project template, Frontend for API and Backend with AdminLTE",
-  "keywords": ["yii2", "advanced", "project template"],
+  "name": "kriss/package-check",
+  "description": "package checker for packagist",
+  "keywords": ["yii2", "package-check", "packagist"],
+  "version": "1.0.1",
   "type": "project",
   "license": "MIT",
   "authors": [
@@ -11,7 +12,7 @@
     }
   ],
   "support": {
-    "source": "https://github.com/krissss/yii2advanced"
+    "source": "https://github.com/krissss/package-check"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
@@ -20,8 +21,8 @@
     "dmstr/yii2-adminlte-asset": "^2.6",
     "kartik-v/yii2-datecontrol": "^1.9",
     "kartik-v/yii2-dynagrid": "^1.4.7",
-    "kriss/yii2-adminlte-iframe-mode": "^1.4",
-    "kriss/yii2-common-class": "^2.0",
+    "kriss/yii2-adminlte-iframe-mode": "^2.0",
+    "kriss/yii2-common-class": "^2.1",
     "kriss/yii2-log-reader": "^2.2",
     "vlucas/phpdotenv": "^2.4",
     "yiisoft/yii2": "2.0.15.1",
@@ -48,10 +49,6 @@
     "composer": {
       "type": "composer",
       "url": "https://asset-packagist.org"
-    },
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.phpcomposer.com"
     }
   }
 }

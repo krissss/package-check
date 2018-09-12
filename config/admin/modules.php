@@ -64,7 +64,7 @@ return [
         'class' => \kriss\modules\auth\Module::class,
         'as user_login' => \kriss\behaviors\web\UserLoginFilter::class,
         'as iframe_layout' => [
-            'class' => \kriss\iframeLayout\IframeLinkFilter::class,
+            'class' => \kriss\iframeLayout\filter\IframeLinkFilter::class,
             'layout' => '@app/views/layouts/main-content'
         ],
         'skipAuthOptions' => []
@@ -73,9 +73,9 @@ return [
         'class' => 'kriss\logReader\Module',
         'as login_filter' => \kriss\behaviors\web\UserLoginFilter::class,
         'aliases' => array_merge([
-            'api' => '@api/runtime/logs/app.log',
-            'admin' => '@admin/runtime/logs/app.log',
-            'console' => '@console/runtime/logs/app.log',
+            'api' => '@runtimePath/api/logs/app.log',
+            'admin' => '@runtimePath/admin/logs/app.log',
+            'console' => '@runtimePath/console/logs/app.log',
         ], $moreLogReaderAliases),
     ],
 ];

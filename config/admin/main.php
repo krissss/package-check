@@ -1,6 +1,7 @@
 <?php
 
 use common\models\Admin;
+use kriss\iframeLayout\component\IframeMode;
 
 $modules = require __DIR__ . '/modules.php';
 $moduleName = 'admin';
@@ -39,6 +40,11 @@ $config = [
                     'skin' => 'skin-blue',
                 ],
             ],
+        ],
+        IframeMode::COMPONENT_NAME => [
+            'class' => IframeMode::class,
+            'enable' => true,
+            'defaultSwitch' => false,
         ],
     ],
 ];
